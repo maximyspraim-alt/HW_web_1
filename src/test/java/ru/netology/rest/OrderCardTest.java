@@ -48,7 +48,7 @@ class OrderCardTest {
 
         // проверка сообщения об успехе
         String successText = driver.findElement(By.cssSelector("[class*='Success_successBlock']")).getText();
-        assertTrue(successText.contains("Ваша заявка успешно отправлена"),
+        assertTrue(successText.contains("ЭТОГО ТЕКСТА НЕТ"),
                 "Ожидалось сообщение об успехе, но было: " + successText);
     }
 }
